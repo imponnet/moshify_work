@@ -15,13 +15,14 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
-
 }
 
 
 /********************************************************************************************************************/
                                            /* TODO: Basic styles */
 /********************************************************************************************************************/
+
+/*************************** Typhography ****************************/
 
 html {
     font-size: 62.5%;
@@ -73,4 +74,32 @@ p {
     }
 }
 
-/********************************************************************************************************************/
+/*************************** Links ****************************/
+
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.25s;
+}
+
+.link-arrow:hover::after {
+    content: "-->";
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
+    }
+}
