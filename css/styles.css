@@ -260,3 +260,29 @@ a {
         font-size: 1.5rem;
     }
 }
+
+/*************************** Input ****************************/
+
+.input {
+    background-color: #fff;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 10px 25px 10px #e5eaed;
+    color: var(--color-headings);
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 2rem 0;
+    outline: none;
+    padding: 3rem 4rem;
+    white-space: nowrap;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+}
