@@ -17,6 +17,8 @@
     --color-accent--hover: #e83406;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 40px;
 }
 
 /********************************************************************************************************************/
@@ -198,7 +200,7 @@ a {
 .btn { 
     align-items: center;
     border: none;
-    border-radius: 40px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     display: inline-flex;
     font-size: 1.8rem;
@@ -265,8 +267,8 @@ a {
 
 .input {
     background-color: #fff;
-    border-radius: 40px;
-    border: none;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
     box-shadow: 0 10px 25px 10px #e5eaed;
     color: var(--color-headings);
     font-size: 2rem;
@@ -283,6 +285,35 @@ a {
 
 @media screen and (min-width: 1024px) {
     .input {
+        font-size: 1.5rem;
+    }
+}
+
+/*************************** Input group ****************************/
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px 10px #e5eaed;
+    display: flex;
+    margin: 2rem 0;
+}
+
+.input-group .input {
+    border: none;
+    box-shadow: none;
+    flex-grow: 1;
+    margin: 0.5rem;
+    padding: 2rem 2rem;
+}
+
+.input-group .btn--search {
+    margin: 0.5rem;
+    padding: 2rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .input-group {
         font-size: 1.5rem;
     }
 }
