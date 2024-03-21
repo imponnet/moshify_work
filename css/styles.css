@@ -437,3 +437,23 @@ a {
     top: -3.75%;
 }
 
+/*************************** Media objects ****************************/
+
+.media {
+    display: flex;
+    padding: 2rem;
+    width: 50%;
+}
+
+.media__image {
+    margin-top: 1rem;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
