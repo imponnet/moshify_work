@@ -508,4 +508,35 @@ a {
 
 }
 
-/*************************** xxxxxxx ****************************/
+/*************************** Grids ****************************/
+
+.grid {
+    display: grid;
+    
+}
+
+.col1 {
+    background-color: gold;
+}
+
+.col2 {
+    background-color: dodgerblue;
+}
+
+.col3 {
+    background-color: orangered;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--2col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--3col {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*************************** xxxxxx ****************************/
