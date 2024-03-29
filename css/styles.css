@@ -584,4 +584,47 @@ a {
     }
 }
 
+/*************************** Callout ****************************/
+
+.callout {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 2rem 3rem; 
+    text-align: center;
+    width: 80%;
+}
+
+.callout__header {
+    color: #fff;
+    margin-top: 1rem;  
+}
+
+.callout__btn {
+    margin: 1rem auto;
+    padding: 2.5rem 7rem; 
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--2col {
+        grid-template-columns: 1fr auto;
+    }
+    
+    .callout {
+        text-align: left;
+    }
+
+    .callout__content {
+        font-size: 2rem;
+    }
+    
+    .callout__btn {
+        justify-self: start;
+        margin: 0 1rem;
+    }
+}
+
 /*************************** xxxx ****************************/
