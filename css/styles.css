@@ -571,7 +571,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .grid--2col {
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -878,7 +878,46 @@ a {
     }
 }
 
-/*************************** xxxx ****************************/
+/*************************** Features block ****************************/
+
+.features {
+    font-size: 2rem;
+    gap: 4rem;
+    margin: 10rem 0;
+    width: 100%;
+}
+
+.features:first-of-type {
+    margin-top: 5rem;
+}
+
+.features .icon-container {
+    width: 6rem;
+    height: 6rem;
+}
+
+.features__heading {
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.features picture {
+    margin: 0;
+}
+
+.features__img {
+   width: 100%;
+}
+
+@media screen and (min-width:768px) {
+.features:nth-of-type(even) .features__content {
+   order: 2;
+}
+
+    
+}
+
+
 
 
 /*************************** xxxx ****************************/
