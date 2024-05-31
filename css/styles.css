@@ -383,7 +383,7 @@ a {
 /*************************** Plans ****************************/
 
 .plan {
-    padding: 2rem;
+    padding: 2rem 0;
     max-width: 52rem;
     margin: 3rem auto;
     transition: transform 0.25s ease-in-out;
@@ -392,8 +392,6 @@ a {
 .plan:hover {
     transform: scale(1.075);
 }
-
-
 
 .plan__name {
     color: #fff;
@@ -428,6 +426,10 @@ a {
 
 @media screen and (min-width: 1024px) {
         
+    .plan {
+        padding: 2rem;
+    }
+    
     .plan__name {
         font-size: 1.4rem;
     }
@@ -623,11 +625,12 @@ a {
 
 .callout {
     background-color: var(--color-primary);
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     margin: 0 auto;
     padding: 2rem 3rem; 
     text-align: center;
+    transform: translateY(5rem);
     width: 80%;
 }
 
@@ -636,16 +639,20 @@ a {
     margin-top: 1rem;  
 }
 
+.callout__content {
+    
+}
+
 .callout__btn {
     margin: 1rem auto;
-    padding: 2.5rem 7rem; 
+    padding: 2.5rem 4rem; 
     align-self: center;
     justify-self: center;
 }
 
 @media screen and (min-width: 768px) {
-    .grid--2col {
-        grid-template-columns: 1fr auto;
+    .callout.grid--2col {
+        grid-template-columns: 2.5fr 1fr;
     }
     
     .callout {
@@ -659,6 +666,7 @@ a {
     .callout__btn {
         justify-self: start;
         margin: 0 1rem;
+        padding: 2.5rem 7rem;
     }
 }
 
@@ -697,7 +705,7 @@ a {
 /*************************** Blocks ****************************/
 
 .block {
-    --padding-vertical-block: 6rem;
+    --padding-vertical-block: 5rem;
     margin: 0 auto;
     padding: var(--padding-vertical-block) 2rem;
 }
@@ -846,13 +854,14 @@ a {
 
 .block-domain__prices {
     align-items: center;
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 6rem);
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-rows: repeat(3, 6rem);
     font-size: 2rem;
     font-weight: 600; 
     justify-items: center;
-    margin: 4rem auto 2rem;
+    margin: 3rem auto 0;
     max-width: 80rem;
 }
 
@@ -862,7 +871,7 @@ a {
     }
     
     .block-domain__prices {
-        grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));       
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));       
     }
 }
 
@@ -965,7 +974,9 @@ a {
     }
 }
 
+/***************************************************************/
 /*************************** Footer ****************************/
+/***************************************************************/
 
 .block-footer {
     color: var(--color-body-darker);
