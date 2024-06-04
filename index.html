@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moshify - Go online for just 9$d</title>
+    <title>Moshify - Go online for just 9$</title>
     <meta name="description" content="Cloud Hosting for Pros. Deploy your websites in less than 60 seconds.">
     <meta name="keywords" content="domain, hosting, cloud, website, wordpress">
-    <title>Moshify</title>
+    <meta property="og:title" content="Moshify - Go online for just 9$">
+    <meta property="og:description" content="Cloud Hosting for Pros. Deploy your websites in less than 60 seconds.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://...">
+    <meta property="og:url" content="https://moshified.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
 
@@ -305,8 +309,8 @@
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
-            <source type="image/webp" srcset="../images/ipad_resized_@1x.webp 1x ../images/ipad_resized_@2x.webp 2x">
-            <source type="image/png" srcset="../images/ipad_resized_@1x.png 1x ../images/ipad_resized_@2x.png 2x">
+            <source type="image/webp" srcset="../images/ipad_resized_@1x.webp 1x, ../images/ipad_resized_@2x.webp 2x">
+            <source type="image/png" srcset="../images/ipad_resized_@1x.png 1x, ../images/ipad_resized_@2x.png 2x">
             <img src="../images/ipad.png" alt="">
             </picture>
             
@@ -373,7 +377,7 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, excepturi.</p>
             </header>
         
-            <article class="testimonial card">
+            <div class="testimonial card">
               <div class="grid grid--2col">
                 <div class="testimonial__image-container">
                   <img class="testimonial__image" src="./images/testimonial.jpg" alt="A happy, smiling customer.">
@@ -400,7 +404,7 @@
                   </footer>
                 </blockquote>
               </div>  
-            </article>
+            </div>
         </section>
 
         <!-- xxxxxxx -->
@@ -421,12 +425,12 @@
     <!-- FOOTER -->
     <!-- xxxxxx -->
     <footer class="block block--dark">
-        <section class="container block grid block-footer">
+        <div class="container block grid block-footer">
     
             <section class="collapsible collapsible--expanded block-footer__navigation">
             <div class="collapsible__header">
                 <h4 class="collapsible__heading block__heading">PRODUCTS</h4>
-                <img src="./icons/chevron.svg" class="icon collapsible__icon">
+                <img src="./icons/chevron.svg" class="icon collapsible__icon" alt="">
             </div>
                 <div class="collapsible__content">
                 <ul class="list">
@@ -440,7 +444,7 @@
             <section class="collapsible collapsible--expanded block-footer__navigation">
             <div class="collapsible__header">
                 <h4 class="collapsible__heading block__heading">COMPANY</h4>
-                <img src="./icons/chevron.svg" class="icon collapsible__icon">
+                <img src="./icons/chevron.svg" class="icon collapsible__icon" alt="">
             </div>
                 <div class="collapsible__content">
                 <ul class="list">
@@ -454,7 +458,7 @@
             <section class="collapsible collapsible--expanded block-footer__navigation">
             <div class="collapsible__header">
                 <h4 class="collapsible__heading block__heading">SUPPORT</h4>
-                <img src="./icons/chevron.svg" class="icon collapsible__icon">
+                <img src="./icons/chevron.svg" class="icon collapsible__icon" alt="">
             </div>
                 <div class="collapsible__content">
                 <ul class="list">
@@ -468,7 +472,7 @@
             <section class="collapsible collapsible--expanded block-footer__navigation">
             <div class="collapsible__header">
                 <h4 class="collapsible__heading block__heading">DOMAINS</h4>
-                <img src="./icons/chevron.svg" class="icon collapsible__icon">
+                <img src="./icons/chevron.svg" class="icon collapsible__icon" alt="">
             </div>
                 <div class="collapsible__content">
                 <ul class="list">
@@ -479,12 +483,12 @@
             </div>
             </section>
             
-            <section class="block-footer__logo">
+            <div class="block-footer__logo">
             <a class="logo" href="/"><img src="./images/logo.svg" alt="Logo of Moshify"></a>
             <p>Copyright 2020 Mosh Hamedani</p>
-            </section>
+            </div>
     
-        </section>
+        </div>
         </footer>
 
     <script src="./js/main.js"></script>

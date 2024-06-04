@@ -454,7 +454,7 @@ a {
 /*************************** Plan with popular badge ****************************/
 
 .plan--popular {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .plan--popular:hover {
