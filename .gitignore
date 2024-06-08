@@ -1,1 +1,6 @@
 node_modules/
+.cache/
+dist/
+.psd
+mobile.psd
+standard.psd
